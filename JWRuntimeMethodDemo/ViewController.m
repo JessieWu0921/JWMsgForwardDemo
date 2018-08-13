@@ -75,6 +75,7 @@
     return [super forwardingTargetForSelector:aSelector];
 }
 
+//override methodSignatureForSelector:
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
     if (sel_isEqual(aSelector, @selector(sayHello))) {
         NSMethodSignature *methodSignature = [[JWFriend new] methodSignatureForSelector:aSelector];
