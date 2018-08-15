@@ -22,7 +22,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
     //get all methods
     [self getAllMethods:[self class]];
     
@@ -98,7 +97,7 @@
     }
 }
 
-//instead function by C
+//insteaded function by C
 void insteadSayHello(id cls, SEL _cmd) {
     printf("Hello hello");
 }
